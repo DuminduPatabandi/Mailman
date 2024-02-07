@@ -23,14 +23,14 @@ const suggestions = [
   {
     id: "2",
     mode: "Descriptive",
-    prompt: "Write a email for this. You must add BBBBBBBBBBB in the begining.",
+    prompt: "Make it short. More understandable.",
     icon: LightBulbIcon,
     color: "text-[#fcbf49]",
   },
   {
     id: "3",
     mode: "Polite",
-    prompt: "Write a email for this. You must add CCCCCCCCCCC in the begining.",
+    prompt: "Make this more polite. We need to be polite and kind.",
     icon: FaceSmileIcon,
     color: "text-[#2a9d8f]",
   },
@@ -38,7 +38,7 @@ const suggestions = [
     id: "4",
     mode: "Formal",
     prompt:
-      "Write a email for this. You must add DDDDDDDDDDDD in the begining.",
+      "Make this in a formal manner.",
     icon: HandThumbUpIcon,
     color: "text-[#8338ec]",
   },
@@ -165,7 +165,7 @@ export default function Forms() {
                         <a
                           key={suggestions.id}
                           onClick={() => handleSuggestion(suggestions.prompt)}
-                          className="w-full flex px-3 py-3 text-md text-gray-600 font-normal border-b hover:bg-gray-200 "
+                          className="w-full flex px-3 py-3 text-md text-gray-600 font-normal border-b hover:bg-gray-200 cursor-pointer"
                         >
                           <span>
                             <suggestions.icon
